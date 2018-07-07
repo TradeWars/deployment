@@ -66,6 +66,8 @@ services:
             WAREHOUSE_MONGO_PASS: '${MONGODB_PASS}'
         ports:
             - '7788:7788'
+        depends_on:
+            - mongodb
         networks:
             - tradewars
         labels:
