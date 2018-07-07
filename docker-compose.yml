@@ -49,6 +49,8 @@ services:
         image: southclaws/tw-gamemode:${VERSION}
         environment:
             DEBUG: '${DEBUG}'
+            WAREHOUSE_ENDPOINT: 'http://warehouse:7788'
+            WAREHOUSE_AUTH: '${WAREHOUSE_AUTH}'
         ports:
             - '7777:7777/tcp'
             - '7777:7777/udp'
