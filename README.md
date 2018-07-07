@@ -13,6 +13,10 @@ as a way to cancel a restart.
 
 ## Usage
 
+To perform a deployment, you must clone this repository to your local machine
+and `cd` into it. Once you've done that, proceed with the deployment commands
+detailed below.
+
 ### Environment
 
 First, you must declare whether you are deploying to a development environment
