@@ -16,9 +16,9 @@ services:
     watchtower:
         image: v2tec/watchtower
         command:
-        - "-label-enable"
+        - "--label-enable"
         volumes:
-        - /var/run/docker.sock:/var/run/docker.sock
+        - //var/run/docker.sock:/var/run/docker.sock
 
 
     # -
@@ -27,7 +27,8 @@ services:
 
     mongodb:
         image: 'mongo:3.4'
-        command: mongod
+        command:
+            - '--storageEngine=${MONGODB_STORAGE_ENGINE}'
         environment:
             MONGO_INITDB_ROOT_USERNAME: '${MONGODB_USER}'
             MONGO_INITDB_ROOT_PASSWORD: '${MONGODB_PASS}'

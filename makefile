@@ -9,12 +9,14 @@ prod:
 	cp prod.env .env
 
 # deploys the stack
+# COMPOSE_CONVERT_WINDOWS_PATHS is necessary for binding the docker unix socket
+# while deploying on Windows.
 up:
 	stat .env
-	docker-compose \
+	COMPOSE_CONVERT_WINDOWS_PATHS=1 docker-compose \
 		up
 
 down:
 	stat .env
-	docker-compose \
+	COMPOSE_CONVERT_WINDOWS_PATHS=1 docker-compose \
 		down
