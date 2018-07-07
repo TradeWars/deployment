@@ -1,4 +1,4 @@
-include .env
+-include .env
 
 # prepares the deployment for a development environment
 dev:
@@ -10,5 +10,11 @@ prod:
 
 # deploys the stack
 up:
+	stat .env
 	docker-compose \
 		up
+
+down:
+	stat .env
+	docker-compose \
+		down

@@ -16,11 +16,9 @@ services:
     watchtower:
         image: v2tec/watchtower
         command:
-        - "--interval 30"
-        - "--label-enable"
+        - "-label-enable"
         volumes:
         - /var/run/docker.sock:/var/run/docker.sock
-        - /root/.docker/config.json:/config.json
 
 
     # -
@@ -38,7 +36,7 @@ services:
         volumes:
             - '${DATA_DIR}/${COMPOSE_PROJECT_NAME}/mongodb:/data/db'
         networks:
-            - mongodb
+            - tradewars
         labels:
             - traefik.enable=false
 
