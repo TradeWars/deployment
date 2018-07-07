@@ -47,6 +47,8 @@ services:
 
     gamemode:
         image: southclaws/tw-gamemode:${VERSION}
+        ports:
+            - 7777:7777
         networks:
             - default
             - tradewars
