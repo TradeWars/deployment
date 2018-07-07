@@ -13,3 +13,8 @@ up:
 	stat .env
 	docker-compose \
 		up
+
+down:
+	stat .env
+	docker-compose \
+		down
