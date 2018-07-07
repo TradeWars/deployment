@@ -28,7 +28,6 @@ services:
     mongodb:
         image: 'mongo:3.4'
         command: mongod
-        restart: on-failure
         environment:
             MONGO_INITDB_ROOT_USERNAME: '${MONGODB_USER}'
             MONGO_INITDB_ROOT_PASSWORD: '${MONGODB_PASS}'
@@ -47,7 +46,6 @@ services:
 
     gamemode:
         image: southclaws/tw-gamemode:${VERSION}
-        restart: on-failure
         networks:
             - default
             - tradewars
@@ -56,7 +54,6 @@ services:
 
     warehouse:
         image: southclaws/tw-warehouse:${VERSION}
-        restart: on-failure
         environment:
             WAREHOUSE_TEMPORARY: "false"
             WAREHOUSE_BIND: "0.0.0.0:7788"
