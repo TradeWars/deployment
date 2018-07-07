@@ -13,10 +13,13 @@ prod:
 # while deploying on Windows.
 up:
 	stat .env
-	COMPOSE_CONVERT_WINDOWS_PATHS=1 docker-compose \
-		up
+	COMPOSE_CONVERT_WINDOWS_PATHS=1 \
+	docker-compose \
+		up \
+		--detach
 
 down:
 	stat .env
-	COMPOSE_CONVERT_WINDOWS_PATHS=1 docker-compose \
+	COMPOSE_CONVERT_WINDOWS_PATHS=1 \
+	docker-compose \
 		down
