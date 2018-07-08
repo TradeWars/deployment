@@ -16,7 +16,8 @@ services:
     watchtower:
         image: v2tec/watchtower
         command:
-        - "--label-enable"
+        - --label-enable
+        - --debug
         volumes:
         - //var/run/docker.sock:/var/run/docker.sock
 
@@ -49,6 +50,7 @@ services:
         image: southclaws/tw-gamemode:${VERSION}
         environment:
             DEBUG: '${DEBUG}'
+            VERSION: '${VERSION}'
             WAREHOUSE_ENDPOINT: 'http://warehouse:7788'
             WAREHOUSE_AUTH: '${WAREHOUSE_AUTH}'
         ports:
