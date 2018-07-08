@@ -50,7 +50,6 @@ services:
         image: southclaws/tw-gamemode:${VERSION}
         environment:
             DEBUG: '${DEBUG}'
-            VERSION: '${VERSION}'
             WAREHOUSE_ENDPOINT: 'http://warehouse:7788'
             WAREHOUSE_AUTH: '${WAREHOUSE_AUTH}'
         ports:
