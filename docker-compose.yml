@@ -59,7 +59,7 @@ services:
             - default
             - tradewars
         labels:
-            - 'com.centurylinklabs.watchtower.enable="true"'
+            - 'com.centurylinklabs.watchtower.enable=true'
 
     warehouse:
         image: southclaws/tw-warehouse:${VERSION}
@@ -80,4 +80,4 @@ services:
         networks:
             - tradewars
         labels:
-            - 'com.centurylinklabs.watchtower.enable="true"'
+            - 'com.centurylinklabs.watchtower.enable=true'
