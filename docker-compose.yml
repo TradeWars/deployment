@@ -60,6 +60,7 @@ services:
             - tradewars
         labels:
             - 'com.centurylinklabs.watchtower.enable=true'
+            - traefik.enable=false
 
     warehouse:
         image: southclaws/tw-warehouse:${VERSION}
@@ -81,3 +82,4 @@ services:
             - tradewars
         labels:
             - 'com.centurylinklabs.watchtower.enable=true'
+            - traefik.enable=false
