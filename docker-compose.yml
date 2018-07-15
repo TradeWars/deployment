@@ -36,7 +36,7 @@ services:
       NAME: Trade Wars Status
       DESCRIPTION: Trade Wars Status
     ports:
-      - "8080:8080"
+      - "9102:8080"
     volumes:
       - "${DATA_DIR}/${COMPOSE_PROJECT_NAME}/statup/app:/app"
     networks:
