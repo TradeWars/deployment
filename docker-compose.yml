@@ -1,9 +1,10 @@
 version: "3"
 
 networks:
+  # default network is external for better integration with existing services.
   default:
-    driver: bridge
-    internal: false
+    external:
+      name: gateway
   # internal database for service communication
   # external communication must use `default` network
   tradewars:
