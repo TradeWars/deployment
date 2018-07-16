@@ -47,7 +47,7 @@ services:
       - mysql
     labels:
       - "com.centurylinklabs.watchtower.enable=true"
-      - traefik.docker.network=${COMPOSE_PROJECT_NAME}_default
+      - traefik.docker.network=gateway
       - "traefik.frontend.rule=Host:status.tradewa.rs"
       - traefik.frontend.headers.SSLRedirect=true
       - traefik.port=8080
