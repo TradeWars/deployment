@@ -127,3 +127,17 @@ services:
     labels:
       - "com.centurylinklabs.watchtower.enable=true"
       - traefik.enable=false
+
+  economy:
+    image: southclaws/tw-economy:${VERSION}
+    environment:
+      DEBUG: "${DEBUG}"
+    ports:
+      - "7799:7799"
+    depends_on:
+      - warehouse
+    networks:
+      - tradewars
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+      - traefik.enable=false
