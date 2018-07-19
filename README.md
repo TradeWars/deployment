@@ -11,7 +11,24 @@ built upon to provide a graceful restart cycle that ensures players and
 operators are notified of an incoming restart and given a grace period as well
 as a way to cancel a restart.
 
-## Usage
+## Usage (Services)
+
+Services must use the following three primary branches to be compatible with
+this deployment setup:
+
+- `master` represents the stable, public, live version - the code running here
+  must have gone through testing with other components in `develop` as well as a
+  staging release on `staging`.
+- `staging` represents the next stable version - the version running here will
+  eventually run in production providing no last-minute issues are discovered.
+- `develop` is a rolling release for testing new features and merging feature
+  branches for integration testing.
+
+Simply by pushing to those branches will trigger the Watchtower application
+running on the deployment server to automatically update the running images once
+it sees new ones hit the Docker Hub.
+
+## Usage (Full Deployment)
 
 To perform a deployment, you must clone this repository to your local machine
 and `cd` into it. Once you've done that, proceed with the deployment commands
