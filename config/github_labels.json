@@ -1,0 +1,168 @@
+[
+  {
+    "name": "area: build",
+    "color": "1d76db",
+    "description": "the sampctl build and ensure process, dependencies, etc."
+  },
+  {
+    "name": "area: code",
+    "color": "1d76db",
+    "description":
+      "relates to the code, suggestions for libraries or bugs caused by logical errors"
+  },
+  {
+    "name": "area: gameplay",
+    "color": "1d76db",
+    "description":
+      "relates to a gameplay mechanic specifically, user-facing, design, etc."
+  },
+  {
+    "name": "area: meta",
+    "color": "1d76db",
+    "description": "issues regarding issues themselves and GitHub in general"
+  },
+  {
+    "name": "area: repo",
+    "color": "1d76db",
+    "description":
+      "repository layout, dot files, documentation, github files, etc."
+  },
+  {
+    "name": "misc: good first issue",
+    "color": "006b75",
+    "description": "good for a new contributor"
+  },
+  {
+    "name": "misc: help wanted",
+    "color": "006b75",
+    "description": "help wanted from another contributor"
+  },
+  {
+    "name": "pr: needs discussion",
+    "color": "5319e7",
+    "description": "requires discussion before further action"
+  },
+  {
+    "name": "pr: needs docs",
+    "color": "5319e7",
+    "description":
+      "requires documentation either via Readme file or code comments"
+  },
+  {
+    "name": "pr: needs review",
+    "color": "5319e7",
+    "description": "requires another contributor to review"
+  },
+  {
+    "name": "pr: needs tests",
+    "color": "5319e7",
+    "description":
+      "requires in-game testing or unit testing to verify completeness"
+  },
+  {
+    "name": "pr: work in progress",
+    "color": "5319e7",
+    "description": "pull request should not be merged"
+  },
+  {
+    "name": "severity: A",
+    "color": "000000",
+    "description":
+      "a run time error that crashes the server or causes memory corruption"
+  },
+  {
+    "name": "severity: B",
+    "color": "FF0000",
+    "description":
+      "significantly impairs its basic functionality or prevents feature access/use"
+  },
+  {
+    "name": "severity: C",
+    "color": "ff7000",
+    "description":
+      "purely visual or gameplay related annoyance, does not impair functionality"
+  },
+  {
+    "name": "status: cannot reproduce",
+    "color": "fbca04",
+    "description":
+      "the bug cannot be repeated by developers, possibly user error"
+  },
+  {
+    "name": "status: confirmed",
+    "color": "fbca04",
+    "description": "the bug has been confirmed"
+  },
+  {
+    "name": "status: deferred",
+    "color": "fbca04",
+    "description":
+      "put off until a later time or depends on something else being solved first"
+  },
+  {
+    "name": "status: discuss",
+    "color": "fbca04",
+    "description": "requires discussion before further action"
+  },
+  {
+    "name": "status: duplicate",
+    "color": "fbca04",
+    "description": "duplicate of another issue"
+  },
+  {
+    "name": "status: in-progress",
+    "color": "fbca04",
+    "description":
+      "actively being worked on by a member of the team or a contributor"
+  },
+  {
+    "name": "status: invalid",
+    "color": "fbca04",
+    "description": "doesn't warrant an issue at all"
+  },
+  {
+    "name": "type: bug",
+    "color": "0e8a16",
+    "description": "unexpected behaviour caused by mistake in code"
+  },
+  {
+    "name": "type: discussion",
+    "color": "0e8a16",
+    "description":
+      "a discussion regarding the project in general that warrants its own issue"
+  },
+  {
+    "name": "type: optimisation",
+    "color": "0e8a16",
+    "description":
+      "an improvement that relates to performance of the code at runtime"
+  },
+  {
+    "name": "type: proposal",
+    "color": "0e8a16",
+    "description":
+      "a formal proposal for a new feature or change to a feature that includes implementation details"
+  },
+  {
+    "name": "type: question",
+    "color": "0e8a16",
+    "description": "a question regarding the area the issue is about"
+  },
+  {
+    "name": "type: regression",
+    "color": "0e8a16",
+    "description": "bug caused by upstream changes"
+  },
+  {
+    "name": "type: suggestion",
+    "color": "0e8a16",
+    "description":
+      "a high-level suggestion for an idea, little to no implementation details or roadmap"
+  },
+  {
+    "name": "type: todo",
+    "color": "0e8a16",
+    "description":
+      "general task for a basic feature or minor fix set by a project lead that needs to be completed"
+  }
+]
