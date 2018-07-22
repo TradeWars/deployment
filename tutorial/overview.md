@@ -8,5 +8,5 @@ description: >-
 
 ## Overview
 
-Before diving into the details, I'll briefly overview what this document contains, why it exists and where the information is sourced.
-
+Before diving into the details, I'll briefly overview what this document
+contains, why it exists and where the information is sourced.

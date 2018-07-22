@@ -1,5 +1,4 @@
 # Table of contents
 
-* [Initial page](README.md)
-* [Tutorial](tutorial.md)
-
+- [Initial page](README.md)
+- [Tutorial](tutorial/overview.md)
